@@ -1,0 +1,37 @@
+print("Welcome to the Quiz App!")
+
+score = 0
+
+answer = input("1. What is 2 + 2? A. 3  B. 4  C. 5: ")
+
+if answer.upper() == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Wrong! The answer is B.")
+
+answer = input("2. What is the capital of the Philippines? A. Manila  B. Cebu  C. Davao: ")
+
+if answer.upper() == "A":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Wrong! The answer is A.")
+
+answer = input("3. What language are we using? A. Java  B. Python  C. HTML: ")
+
+if answer.upper() == "B":
+    print("Correct!")
+    score = score + 1
+else:
+    print("Wrong! The answer is B.")
+
+print("Quiz finished!")
+print("Your score is:", score, "/ 3")
+
+if score == 3:
+    print("Excellent! Perfect score!")
+elif score >= 2:
+    print("Good job!")
+else:
+    print("Keep practicing!")
